@@ -1,4 +1,3 @@
 venv
 __pycache__
 run.py
-run_prod.py
