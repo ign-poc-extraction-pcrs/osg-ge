@@ -1,4 +1,4 @@
-# POC PCRS
+# POC OSG-GE
 
 Ce dépôt a pour but de faire un poc sur l'osg-ge
 
@@ -16,7 +16,7 @@ Ce dépôt a pour but de faire un poc sur l'osg-ge
     
     * template/ : dossier qui contient tous les fichiers html appelé par les routes
         * layout/ : dossier contenant la barre de navigation et le footer d'une page html (peut être vide)
-        * pages/ : dossier contenant les différentes pages appelés par les routes (en l'occurrence version1 et version2 pour le PCRS et version3 pour le LIDAR)
+        * pages/ : dossier contenant les différentes pages appelés par les routes 
         * base : fichier contenant tout le haut commun de toutes les pages html
     
     * __init__.py : fichier qui initialise l'app + configure les différents fichiers de routes
@@ -30,6 +30,13 @@ Ce dépôt a pour but de faire un poc sur l'osg-ge
 ## Run projet en local
 
 Se mettre à la racine du projet
+Si vous avez docker :
+
+```
+docker-compose up 
+```
+
+Sinon
 Création et activation de l'environnement virtuel (si besoin) :
 
 Windows :
@@ -68,3 +75,11 @@ En dev :
 ```
 python3 run.py
 ```
+
+## Deploiement
+
+git push ou merge request sur la branche main du depot git
+
+aller sur cette url : https://gitlab.gpf-tech.ign.fr/bac-a-sable-rdd/demo-osge-deploiement/-/pipelines
+
+Run la pipeline
